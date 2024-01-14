@@ -1,0 +1,92 @@
+.exhibition-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  padding: 5vw;
+  transition: transform 0.2s ease-in-out;
+  width: 20vw;
+  max-width: 250px;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  .exhibition-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+
+  .exhibition-details {
+    text-align: center;
+
+    .exhibition-title {
+      font-size: 2em;
+      margin: 0;
+      color: #333;
+    }
+
+    .exhibition-artist,
+    .exhibition-date {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    .exhibition-description {
+      font-style: italic;
+      color: #777;
+    }
+  }
+}
+
+.exhibition-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// detail
+
+.exhibition-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vw;
+}
+
+.exhibition-detail-image {
+  width: 40vw;
+  height: 30vw;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  border-radius: 1vw;
+  margin-bottom: 2vw;
+}
+
+.exhibition-detail-details {
+  margin-left: 5vw;
+  text-align: left;
+}
+
+.exhibition-detail-title {
+  font-size: 2vw;
+  margin-bottom: 1vw;
+  color: #333;
+}
+
+.exhibition-detail-artist,
+.exhibition-detail-date,
+.exhibition-detail-description {
+  font-size: 1.5vw;
+  margin-bottom: 1vw;
+  color: #666;
+}
+
+.exhibition-detail-description {
+  font-style: italic;
+}
