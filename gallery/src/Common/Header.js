@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Header.scss';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   const [language, setLanguage] = useState('KOR');
@@ -20,7 +21,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className="logo"><img src='/logo.png' alt="Logo" /></div>
+      <div className="logo"><NavLink to='/'><img src='/logo.png' alt="Logo" /></NavLink></div>
       <div className={`language-button${isMenuOpen ? ' menu-open' : ''}`} onClick={LanguageBtn}>
         KOR / ENG
       </div>
@@ -38,8 +39,8 @@ const Header = () => {
 
       {isMenuOpen && (
         <div className="menu">
-          <div className="menu-item">메인</div>
-          <div className="menu-item">전시</div>
+          <div className="menu-item"><NavLink to='/'>메인</NavLink></div>
+          <div className="menu-item"><NavLink to='/exhibition'>전시</NavLink></div>
           <div className="menu-item">미술가</div>
           <div className="menu-item">이벤트</div>
           <div className="menu-item">연락처</div>
