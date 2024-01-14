@@ -1,8 +1,8 @@
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 95%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,7 +21,7 @@ header {
   .language-button {
     cursor: pointer;
     margin-left: auto;
-    margin-right: 7vw;
+    margin-right: 5vw;
 
     &.menu-open {
       color: white;
@@ -36,7 +36,7 @@ header {
     flex-direction: column;
     transition: transform 0.3s ease-in-out;
     z-index: 2;
-    margin-right: 2vw;
+    float: right;
 
     .close-icon {
       color: white;

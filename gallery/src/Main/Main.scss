@@ -23,13 +23,13 @@
   line-height: 1.5;
   letter-spacing: 1px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  animation: fadeIn 2s ease-in-out forwards;
+  animation: fadeIn 1s ease-in-out forwards;
 
   &::after {
     content: "미술의 아름다움을 향해 한 걸음 더 나가다.";
     display: block;
     opacity: 0;
-    animation: fadeIn 2s ease-in-out 1.5s forwards;
+    animation: fadeIn 1s ease-in-out 1s forwards;
     margin-top: 30px;
   }
 }
@@ -254,35 +254,43 @@
   font-weight: bold;
 }
 
+
+
+
+
 //Section4
 
 .section4 {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 20px;
 }
 
 .about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
+  // max-width: 1200px;
+  // margin: 0 auto;
 }
 
 .section4 p {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 3vw;
   color: #333;
+  margin-left: 3vw;
 }
 
 .contact,
 .faq {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-basis: 48%;
-  margin: 20px 0;
   position: relative;
+  height: 10vw;
 }
 
 .contact {
@@ -336,5 +344,35 @@
 
   &:hover:before {
     width: 100%;
+  }
+}
+
+.history {
+  background: url('../../public/main111.jpg') center/cover;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  > a {
+    height: 100%;
+    width: 15vw;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    display: flex;
+    padding-top: 5vw;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    font-size: 1.6em;
+    font-weight: bold;
+    border-left: 0.3px solid #fff;    
+
+    &:hover {
+      background-color: #fff;
+      color: red;
+    }
   }
 }
