@@ -1,0 +1,38 @@
+// Artist.scss
+
+.artist-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 10vw 20px 20px 20px;
+}
+
+.artist-row {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.artist-item {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #333;
+  }
+}

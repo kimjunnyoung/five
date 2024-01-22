@@ -41,7 +41,7 @@ const Header = () => {
         <div className="menu">
           <div className="menu-item"><NavLink to='/'>메인</NavLink></div>
           <div className="menu-item"><NavLink to='/exhibition'>전시</NavLink></div>
-          <div className="menu-item">미술가</div>
+          <div className="menu-item"><NavLink to='/artist'>미술가</NavLink></div>
           <div className="menu-item">이벤트</div>
           <div className="menu-item">연락처</div>
           <div className="menu-item">FAQ</div>
